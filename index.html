@@ -257,10 +257,14 @@
 i++;
 </code></pre><p>}<br>document.write(sum);</p>
 <p><em>(3)do-while语句，其实do-while语句很不符合我的习惯，因为这是个测试的语句，因为它无论条件符合不符合，都会先执行一遍循环，然后判断条件符合不符合，所以我一直很少用这个</em></p>
-<p>do{<br>    i++;<br>    sum=sum+i;</p>
-<p>}<br>while(i&lt;100);<br>document.write(sum);//4950</p>
-<p>do{<br>    i++;<br>    sum=sum+i;</p>
-<p>}<br>while(i&gt;100);<br>document.write(sum);//1</p>
+<p>do{</p>
+<pre><code>i++;
+<span class="keyword">sum</span>=<span class="keyword">sum</span>+i;
+</code></pre><p>}<br>while(i&lt;100);<br>document.write(sum);//4950</p>
+<p>do{</p>
+<pre><code>i++;
+<span class="keyword">sum</span>=<span class="keyword">sum</span>+i;
+</code></pre><p>}<br>while(i&gt;100);<br>document.write(sum);//1</p>
 <h3 id="5、switch语句、if-else_if">5、switch语句、if-else if</h3><p>switch和if-else if都是一个多分支选择语句，都是让我们进行条件的判断，可是switch语句就能很清晰的让我们看到他的一些情况，更方便我们理解，其实下边两个代码是一样的</p>
 <p>function swith(){</p>
 <pre><code><span class="keyword">var</span> i=<span class="built_in">arguments</span>[<span class="number">0</span>];

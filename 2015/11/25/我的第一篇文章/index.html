@@ -17,7 +17,7 @@
 复杂数据类型：object
 假如我们要对一些字符串进行加减乘除运算操作，必须要转化为同类型的才能进行，由此可见，我们还是有必要了解数据类型之间的转换的
 基本数据类型的三种转换方法1、number();将各种类型转换为数字类型2、string(">
-<meta property="og:updated_time" content="2015-11-26T07:01:28.000Z">
+<meta property="og:updated_time" content="2015-11-26T07:05:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的第一篇文章">
 <meta name="twitter:description" content="js的一些理解：1、js数据类型：数据类型是为了方便我们知道我们保存的是什么类型的值基本数据类型：boolean、number、空对象、空类型、string
@@ -272,10 +272,14 @@
 i++;
 </code></pre><p>}<br>document.write(sum);</p>
 <p><em>(3)do-while语句，其实do-while语句很不符合我的习惯，因为这是个测试的语句，因为它无论条件符合不符合，都会先执行一遍循环，然后判断条件符合不符合，所以我一直很少用这个</em></p>
-<p>do{<br>    i++;<br>    sum=sum+i;</p>
-<p>}<br>while(i&lt;100);<br>document.write(sum);//4950</p>
-<p>do{<br>    i++;<br>    sum=sum+i;</p>
-<p>}<br>while(i&gt;100);<br>document.write(sum);//1</p>
+<p>do{</p>
+<pre><code>i++;
+<span class="keyword">sum</span>=<span class="keyword">sum</span>+i;
+</code></pre><p>}<br>while(i&lt;100);<br>document.write(sum);//4950</p>
+<p>do{</p>
+<pre><code>i++;
+<span class="keyword">sum</span>=<span class="keyword">sum</span>+i;
+</code></pre><p>}<br>while(i&gt;100);<br>document.write(sum);//1</p>
 <h3 id="5、switch语句、if-else_if">5、switch语句、if-else if</h3><p>switch和if-else if都是一个多分支选择语句，都是让我们进行条件的判断，可是switch语句就能很清晰的让我们看到他的一些情况，更方便我们理解，其实下边两个代码是一样的</p>
 <p>function swith(){</p>
 <pre><code><span class="keyword">var</span> i=<span class="built_in">arguments</span>[<span class="number">0</span>];
