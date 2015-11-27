@@ -270,13 +270,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="html、css">html、css</h1><h3 id="1、html常用标签">1、html常用标签</h3><p>所有的标签的命名、属性都是小写的，属性值用双引号，</p>
-<p><em>*行级标签： a span</em></p>
-<p>没有默认高度、内容撑开，默认字体颜色为黑色，能够修改宽度，设置左右间距，但是不能给高度设置</p>
-<p><em>*块级标签： div p h1~h6</em></p>
-<p>默认高度为0，默认宽度为整屏的宽度，它们是一个区域，能改宽高、能改背景颜色，图片，设置上下左右间距</p>
-<p><em>*表格级标签：</em><br>用来做表格、表单比较方便快捷，在这里就不多说了。。。</p>
-<h3 id="2、css的三种引入方式">2、css的三种引入方式</h3><p>1、行间样式，一般这种样式用来作为对标签进行修改的时候使用，因为他的样式优先级最高，而且不能复用，样式与内容哦感不能分离<br>2、link引入，这种样式是我们见过最多的，也是使用最方便的，可以和其他的样式分离<br>3、style方式，在head里修改实现了样式分离，但是不能复用<br>行间样式引入的例子：</p>
+        <h1 id="html、css">html、css</h1><h3 id="1、css的三种引入方式">1、css的三种引入方式</h3><p>1、行间样式，一般这种样式用来作为对标签进行修改的时候使用，因为他的样式优先级最高，而且不能复用，样式与内容哦感不能分离<br>2、link引入，这种样式是我们见过最多的，也是使用最方便的，可以和其他的样式分离<br>3、style方式，在head里修改实现了样式分离，但是不能复用<br>行间样式引入的例子：</p>
 <pre><code>&lt;style=<span class="string">"width: 100px; height: 49px; background: green;"</span>&gt;
 </code></pre><p>link引入方式：</p>
 <pre><code>&lt;link rel=<span class="string">"stylesheet"</span> <span class="class"><span class="keyword">type</span></span>=<span class="string">"text/css"</span> href=<span class="string">"../reset.css"</span>/&gt;
@@ -291,7 +285,7 @@
         <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">50px</span></span></span>;
     }</span>
 </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>  
-</code></pre><h3 id="3、标签的background属性">3、标签的background属性</h3><p>background有四个属性：颜色、图片、平铺、定位postion<br>用法：background-color:green<br>在前边我们已经说过了css的引入方式，那么以后我就会在css文件里添加样式了，首先在html中创建一个div标签，然后在链接完成的css文件中输入以下的内容，然后就会出现一个绿色的长方形框</p>
+</code></pre><h3 id="2、标签的background属性">2、标签的background属性</h3><p>background有四个属性：颜色、图片、平铺、定位postion<br>用法：background-color:green<br>在前边我们已经说过了css的引入方式，那么以后我就会在css文件里添加样式了，首先在html中创建一个div标签，然后在链接完成的css文件中输入以下的内容，然后就会出现一个绿色的长方形框</p>
 <pre><code><span class="tag">div</span><span class="rules">{
         <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100px</span></span></span>;
         <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">300px</span></span></span>;
@@ -333,7 +327,7 @@ background-position: center;*/</span>
 <span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(<span class="string">"http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) no-repeat center</span></span>;</span>
 </code></pre><p>}</p>
 <p>到这里background的所有属性都已经讲完了，如果大家有问题，可以一起讨论呢，夜影随时欢迎你们！</p>
-<h3 id="4、选择器">4、选择器</h3><p>在css中，说到选择器，大家应该也不陌生呢，我想，我应该跟大家一样，喜欢用类选择器和id选择器吧，那么究竟有几种选择器，他们之间又有着怎么样的联系呢<br>选择器：层级选择器、群组选择器、标签选择器、id选择器、通配选择器<br>其中，若在只有一个选择器的话，id选择器的优先级最高，其次是类选择器。下边跟我一起来看一些例子吧，可能会帮助你们更好的了解选择器.<br>那么首先我肯定要先在html中创建这些div，div1就属于类选择器，div2属于id选择器，什么都不写，在css中直接用div的属于标签选择器<br>通配选择器就是在css中以*号开始给所有的选择器设置，群组选择器就是对很多个有相同设定的标签设定的选择器，可以同时作用与多个标签</p>
+<h3 id="3、选择器">3、选择器</h3><p>在css中，说到选择器，大家应该也不陌生呢，我想，我应该跟大家一样，喜欢用类选择器和id选择器吧，那么究竟有几种选择器，他们之间又有着怎么样的联系呢<br>选择器：层级选择器、群组选择器、标签选择器、id选择器、通配选择器<br>其中，若在只有一个选择器的话，id选择器的优先级最高，其次是类选择器。下边跟我一起来看一些例子吧，可能会帮助你们更好的了解选择器.<br>那么首先我肯定要先在html中创建这些div，div1就属于类选择器，div2属于id选择器，什么都不写，在css中直接用div的属于标签选择器<br>通配选择器就是在css中以*号开始给所有的选择器设置，群组选择器就是对很多个有相同设定的标签设定的选择器，可以同时作用与多个标签</p>
 <pre><code>&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"div1"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
  &lt;<span class="keyword">div</span> <span class="property">id</span>=<span class="string">"div2"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
  &lt;<span class="keyword">div</span> &gt;&lt;/<span class="keyword">div</span>&gt;
@@ -362,7 +356,7 @@ background-position: center;*/</span>
 <span class="class">.div3</span>,<span class="class">.div4</span><span class="rules">{
     <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">100px</span></span></span>;
 }</span>
-</code></pre><h3 id="5、position的使用">5、position的使用</h3><p>position有三个值，代表了三个类型，一个是fixed，一个是relative，一个是absolute；</p>
+</code></pre><h3 id="4、position的使用">4、position的使用</h3><p>position有三个值，代表了三个类型，一个是fixed，一个是relative，一个是absolute；</p>
 <p><em>relative：是相对定位，对标签没有属性的改变，设置left、right、top、bottom方向可以偏移，有z-index的级别样式，默认后边的元素覆盖前边的元素</em></p>
 <p><em>absolue：对标签属性有改变，float无效，有清除浮动的效果，内容撑开宽度，有z-index 样式和margin，以父级标签的relative为七点或者以body左上角为起点</em></p>
 <p><em>fixed：固定定位，类是于绝对定位，有改变元素属性，方向固定后，是以浏览器窗口定位，不会因为html的滚动而改变位置</em><br>大家一起看个小例子吧：</p>
@@ -391,8 +385,8 @@ background-position: center;*/</span>
     position: absolute;
     right:<span class="number">0</span>px;
 }
-</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/fixed-aboslute.png?attname=" alt="初始状态"></p>
-<p><img src="http://7xoooy.com1.z0.glb.clouddn.com/fixed.png?attname=" alt="当将屏幕向下拉的时候的状态"></p>
+</code></pre><p>初始状态<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/fixed-aboslute.png?attname=" alt="初始状态"></p>
+<p>当将屏幕沿着滚动条向下拉的时候的状态<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/fixed.png?attname=" alt="当将屏幕向下拉的时候的状态"></p>
 
       
     </div>
