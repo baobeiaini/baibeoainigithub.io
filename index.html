@@ -1,138 +1,571 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html>
 <head>
-
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title> 千城雪 </title>
-	<meta property="og:title" content=" 千城雪 " />
-	<meta name="twitter:title" content=" 千城雪 ">
-
-	<meta property="og:type" content="article">
-	<meta name="twitter:card" content="summary">
-
-	<meta name="description" content=" 在蓝欧的点滴 ">
-	<meta property="og:description" content=" 在蓝欧的点滴 " />
-	<meta name="twitter:description" content=" 在蓝欧的点滴 " />
-
-	<link rel="icon" type="image/x-icon" href="http://yoursite.com/asset/img/favicon.png">
-
-	<link rel="image_src" href="http://yoursite.com/asset/img/logo.png" >
-	<meta property="og:image" content="http://yoursite.com/asset/img/logo.png" />
-
-	<link href="http://yoursite.com/atom.xml" title="千城雪" type="application/atom+xml" rel="alternative">
-
-	<link rel="canonical" href="/">
-
-	<link rel="stylesheet" href="/asset/css/style.css">
+  <meta charset="utf-8">
+  
+  <title>千城雪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在蓝欧的点滴">
+<meta property="og:type" content="website">
+<meta property="og:title" content="千城雪">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="千城雪">
+<meta property="og:description" content="在蓝欧的点滴">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="千城雪">
+<meta name="twitter:description" content="在蓝欧的点滴">
+  
+    <link rel="alternative" href="/atom.xml" title="千城雪" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
 
 </head>
-
 <body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">千城雪</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">厚积才能薄发</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-html" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/26/html/" class="article-date">
+  <time datetime="2015-11-26T07:44:17.000Z" itemprop="datePublished">2015-11-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/26/html/">html</a>
+    </h1>
+  
 
-	<div class="layout-header">
-		<header class="header">
-			<div class="layout-logo">
-				<div class="panel-logo">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="html、css">html、css</h1><h3 id="1、标签的background属性">1、标签的background属性</h3><p>background有四个属性：颜色、图片、平铺、定位postion<br>用法：background-color:green<br>在前边我们已经说过了css的引入方式，那么以后我就会在css文件里添加样式了，首先在html中创建一个div标签，然后在链接完成的css文件中输入以下的内容，然后就会出现一个绿色的长方形框</p>
+<pre><code><span class="tag">div</span><span class="rules">{
+        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100px</span></span></span>;
+        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">300px</span></span></span>;
+        <span class="rule"><span class="attribute">background</span>:<span class="value">green</span></span>;
+    }</span>
+</code></pre><p>background-image的使用方式如下：background-image:url() no-repeat;,具体实例如下：</p>
+<pre><code><span class="tag">div</span><span class="rules">{
+<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">1000px</span></span></span>;
+<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">460px</span></span></span>;
+<span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">"http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) </span></span>;</span>
+</code></pre><p>}</p>
+<p><img src="http://7xoooy.com1.z0.glb.clouddn.com/background-image.png?attname=" alt="上述效果图片"></p>
+<p>background-repeat的用法及含义：repeat表示平铺，background-repeat有三个属性值，一个是no-repeat，不平铺；第二个是repeat-x，沿着x轴平铺；repeat-y沿着y轴平铺<br>还是上述的那张图片，还是上边那个例子，在background-image语句的后边添加语句background-repeat:repeat-x;</p>
+<pre><code><span class="tag">div</span><span class="rules">{
 
-					<div class="box-logo">
-						<a href="/" title="千城雪"><img src="/asset/img/logo.png" class="img-logo"></a>
-					</div>
-					<div class="box-main-title">
-						<h1><a href="/">千城雪</a></h1>
-					</div>
-					<div class="box-sub-title">
+<span class="comment">/*width:500px;*/</span>
+<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">460px</span></span></span>;
+<span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">"http://    7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) </span></span>;
+<span class="rule"><span class="attribute">background-repeat</span>:<span class="value"> repeat-x</span></span>;</span>
+</code></pre><p>}<br>这样就会出现下边的效果，仔细看哦,跟上边的不一样呢，这是好多张图片按x轴平铺，就是一直重复出现的意思<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/repeat.png?attname=" alt="效果立马见出来哦"><br>background-position的写法：<br>background-postion:center;后边可以是一个单词，可以是两个值，表示向左向右的距离，也可以写top bottom表示在容器的底部或顶部，大家看哦，在这里我把background所包含属性都敲出来了</p>
+<pre><code><span class="tag">div</span><span class="rules">{
 
-						<p>厚积才能薄发</p>
+<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">1500px</span></span></span>;
+<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">460px</span></span></span>;
+<span class="rule"><span class="attribute">background-color</span>:<span class="value">green</span></span>;
+<span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">"http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) </span></span>;
+<span class="rule"><span class="attribute">background-repeat</span>:<span class="value"> no-repeat</span></span>;
+<span class="rule"><span class="attribute">background-position</span>:<span class="value"> center</span></span>;</span>
+</code></pre><p>}</p>
+<p><img src="http://7xoooy.com1.z0.glb.clouddn.com/position.png?attname=" alt="position"><br>其实background还有一种复合的写法，可以减去我们很多的麻烦，我一般都会用复合的呢，但是那个没有这个清晰明了，大家跟我来看一看吧</p>
+<pre><code><span class="tag">div</span><span class="rules">{
 
-					</div>
-				</div>
-			</div>
-			<div class="layout-menu">
-				<div class="box-menu-list">
-					<nav class="page-nav">
-						<ul class="menu-list">
+<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">1500px</span></span></span>;
+<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">460px</span></span></span>;
+<span class="comment">/*background-color:green;
+background-image: url("http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname=") ;
+background-repeat: no-repeat;
+background-position: center;*/</span>
+<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(<span class="string">"http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) no-repeat center</span></span>;</span>
+</code></pre><p>}</p>
+<p>到这里background的所有属性都已经讲完了，如果大家有问题，可以一起讨论呢，夜影随时欢迎你们！</p>
+<h3 id="2、选择器">2、选择器</h3><p>在css中，说到选择器，大家应该也不陌生呢，我想，我应该跟大家一样，喜欢用类选择器和id选择器吧，那么究竟有几种选择器，他们之间又有着怎么样的联系呢<br>选择器：层级选择器、群组选择器、标签选择器、id选择器、通配选择器<br>其中，若在只有一个选择器的话，id选择器的优先级最高，其次是类选择器。下边跟我一起来看一些例子吧，可能会帮助你们更好的了解选择器.<br>那么首先我肯定要先在html中创建这些div，div1就属于类选择器，div2属于id选择器，什么都不写，在css中直接用div的属于标签选择器<br>通配选择器就是在css中以*号开始给所有的选择器设置，群组选择器就是对很多个有相同设定的标签设定的选择器，可以同时作用与多个标签</p>
+<pre><code>&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"div1"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+ &lt;<span class="keyword">div</span> <span class="property">id</span>=<span class="string">"div2"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+ &lt;<span class="keyword">div</span> &gt;&lt;/<span class="keyword">div</span>&gt;
+ &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"div3"</span>&gt;
+     &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"div4"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+ &lt;/<span class="keyword">div</span>&gt;
+</code></pre><p>下边第一个使用div就是标签选择器，如果不加路径，那么在这个div下边的所有的div都会继承于这个，div1属于类选择器，div2 属于id选择器，div3 div4就属于父子选择器也就是层级选择器，最后一个是群组选择器，如果是我们自己写代码，尽量避免使用id选择器，因为id的层级比较高，后续维护人员不利于修改，所以我经常使用类选择器，群组选择器和父子选择器的层级就要看具体使用了哪些选择器了，然后将层级相加加好了。。。</p>
+<pre><code><span class="tag">div</span><span class="rules">{
+<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">1500px</span></span></span>;
+<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">460px</span></span></span>;
+<span class="comment">/*background-color:green;
+background-image: url("http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname=") ;
+background-repeat: no-repeat;
+background-position: center;*/</span>
+<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(<span class="string">"http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) no-repeat center</span></span>;
+}</span>
+<span class="class">.div1</span><span class="rules">{
+<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100px</span></span></span>;
+}</span>
+<span class="id">#div2</span><span class="rules">{
+    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span></span></span>;
+}</span>
+<span class="class">.div3</span> <span class="class">.div4</span><span class="rules">{
+    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100px</span></span></span>;
+}</span>
+<span class="class">.div3</span>,<span class="class">.div4</span><span class="rules">{
+    <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">100px</span></span></span>;
+}</span>
+</code></pre><h3 id="3、position的使用">3、position的使用</h3><p>position有三个值，代表了三个类型，一个是fixed，一个是relative，一个是absolute；</p>
+<p><em>relative：是相对定位，对标签没有属性的改变，设置left、right、top、bottom方向可以偏移，有z-index的级别样式，默认后边的元素覆盖前边的元素</em></p>
+<p><em>absolue：对标签属性有改变，float无效，有清除浮动的效果，内容撑开宽度，有z-index 样式和margin，以父级标签的relative为七点或者以body左上角为起点</em></p>
+<p><em>fixed：固定定位，类是于绝对定位，有改变元素属性，方向固定后，是以浏览器窗口定位，不会因为html的滚动而改变位置</em><br>大家一起看个小例子吧：</p>
+<pre><code> &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"box1"</span>&gt;
+     &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"box2"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+      &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"box3"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+      &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"box4"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+ &lt;/<span class="keyword">div</span>&gt;
 
-							<li class="box-menu-item"><a href="/"><span class="menu-item">Home</span></a></li>
+ .box1{
+    width:<span class="number">800</span>px;
+    height:<span class="number">1500</span>px;
+    border:<span class="number">1</span>px blue solid;
+    position: relative;
+}
+.box2{
+    width:<span class="number">100</span>px;
+    height:<span class="number">50</span>px;
+    background:green;
+    position: fixed;
+}
+.box3{
+    width:<span class="number">100</span>px;
+    height:<span class="number">50</span>px;
+    background:red;
+    position: absolute;
+    right:<span class="number">0</span>px;
+}
+</code></pre><p>初始状态<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/fixed-aboslute.png?attname=" alt="初始状态"></p>
+<p>当将屏幕沿着滚动条向下拉的时候的状态<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/fixed.png?attname=" alt="当将屏幕向下拉的时候的状态"></p>
 
-							<li class="box-menu-item"><a href="/archives"><span class="menu-item">Sitemap</span></a></li>
-
-							<li class="box-menu-item"><a href="/page/"><span class="menu-item">Page</span></a></li>
-
-						</ul>
-					</nav>
-
-				</div>
-			</div>
-		</header>
-	</div>
-
-	<div class="layout-content">
-
-		<div class="row panel-content panel-archive-list">
-			<h2 class="panel-archive-title"></h2>
-			<div class="box-archive-list">
-				<ul class="archive-list">
-
-					<li class="box-archive-item" itemscope itemtype="http://schema.org/Article" >
-						<div class="archive-item">
-							<h3 class="box-archive-item-title"><a href="/2015/11/26/html/" itemprop="url" ><span  class="archive-item-title" itemprop="name">html</span></a></h3>
-
-							<p class="box-archive-item-date"><a href="/2015/11/26/html/"><span class="archive-item-date" itemprop="datePublished" content="2015-11-28">2015-11-26</span></a></p>
-						</div>
-					</li>
-
-					<li class="box-archive-item" itemscope itemtype="http://schema.org/Article" >
-						<div class="archive-item">
-							<h3 class="box-archive-item-title"><a href="/2015/11/25/我的第一篇文章/" itemprop="url" ><span  class="archive-item-title" itemprop="name">js</span></a></h3>
-
-							<p class="box-archive-item-date"><a href="/2015/11/25/我的第一篇文章/"><span class="archive-item-date" itemprop="datePublished" content="2015-11-28">2015-11-25</span></a></p>
-						</div>
-					</li>
-
-					<li class="box-archive-item" itemscope itemtype="http://schema.org/Article" >
-						<div class="archive-item">
-							<h3 class="box-archive-item-title"><a href="/2015/11/24/hello-world/" itemprop="url" ><span  class="archive-item-title" itemprop="name">Hello World</span></a></h3>
-
-							<p class="box-archive-item-date"><a href="/2015/11/24/hello-world/"><span class="archive-item-date" itemprop="datePublished" content="2015-11-28">2015-11-24</span></a></p>
-						</div>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-
-
-		<div class="panel-archive-nav">
-			<div class="box-archive-nav">
-
-				<nav class="archive-nav">
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/11/26/html/" data-id="cihix3yoa0002yua274dpmhyr" class="article-share-link">Share</a>
+        <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cihix3yoa0002yua274dpmhyr" data-title="cihix3yoa0002yua274dpmhyr" data-url="http://yoursite.com/2015/11/26/html/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+      
+        <a href="http://yoursite.com/2015/11/26/html/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
 
 
-				</nav>
+  
+    <article id="post-我的第一篇文章" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/25/我的第一篇文章/" class="article-date">
+  <time datetime="2015-11-25T08:36:19.000Z" itemprop="datePublished">2015-11-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/25/我的第一篇文章/">js</a>
+    </h1>
+  
 
-			</div>
-		</div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="js的一些理解：">js的一些理解：</h2><h3 id="1、循环语句：for、while、do-while语句">1、循环语句：for、while、do-while语句</h3><p><em>(1)for循环格式:说实在话，还是最喜欢for循环，尽管它比较长，嘿嘿。下边我就讲解一下我对for的理解吧：</em><br><em>for(语句1；语句2；语句3)｛执行代码块｝平时，我们都以为执行完代码就是一遍循环，其实不是，在整个for循环中，第一第二条语句是在for循环执行的时候开始执行，然后执行代码块，最后才回到语句3，这才是一个完成的循环；在第一第二条语句中，我们都是一些变量的初始化或者是放一些这个循环停止的条件，如果不添加停止条件，for循环一直满足条件，就会陷入死循环。</em></p>
+<p>var sum=0;</p>
+<p>var i=0;</p>
+<p>for(var i=0;i&lt;100;i++)<br>{</p>
+<pre><code><span class="keyword">sum</span>=<span class="keyword">sum</span>+i;
+</code></pre><p>}</p>
+<p>document.write(sum);//4950</p>
+<p><em>(2)while循环语句先判断条件，满足后再执行，书写也方便，可是你必须提前给变量声明，所以在嵌套的时候不太方便，所以我不经常用哦</em></p>
+<p>while(i&lt;100){</p>
+<pre><code><span class="keyword">sum</span>=<span class="keyword">sum</span>+i;
+i++;
+</code></pre><p>}<br>document.write(sum);</p>
+<p><em>(3)do-while语句，其实do-while语句很不符合我的习惯，因为这是个测试的语句，因为它无论条件符合不符合，都会先执行一遍循环，然后判断条件符合不符合，所以我一直很少用这个</em></p>
+<p>do{</p>
+<pre><code>i++;
+<span class="keyword">sum</span>=<span class="keyword">sum</span>+i;
+</code></pre><p>}<br>while(i&lt;100);<br>document.write(sum);//4950</p>
+<p>do{</p>
+<pre><code>i++;
+<span class="keyword">sum</span>=<span class="keyword">sum</span>+i;
+</code></pre><p>}<br>while(i&gt;100);<br>document.write(sum);//1</p>
+<h3 id="2、switch语句、if-else_if">2、switch语句、if-else if</h3><p>switch和if-else if都是一个多分支选择语句，都是让我们进行条件的判断，可是switch语句就能很清晰的让我们看到他的一些情况，更方便我们理解，其实下边两个代码是一样的,case是switch语句的分支，用于执行某个条件的情况</p>
+<p>function swith(){</p>
+<pre><code><span class="keyword">var</span> i=<span class="built_in">arguments</span>[<span class="number">0</span>];
+<span class="keyword">switch</span>(<span class="built_in">parseInt</span>(i/<span class="number">10</span>)){
+    <span class="keyword">case</span> <span class="number">9</span>:<span class="built_in">document</span>.write(<span class="string">"你的成绩是A呢，很优秀！"</span>);<span class="keyword">break</span>;
+    <span class="keyword">case</span> <span class="number">8</span>:<span class="built_in">document</span>.write(<span class="string">"你的成绩是B呢，很棒呢"</span>);<span class="keyword">break</span>;
+    <span class="keyword">case</span> <span class="number">7</span>:<span class="built_in">document</span>.write(<span class="string">"你的成绩是C呢，要继续努力"</span>);<span class="keyword">break</span>;
+    <span class="keyword">case</span> <span class="number">6</span>:<span class="built_in">document</span>.write(<span class="string">"你的成绩是D，刚及格"</span>);<span class="keyword">break</span>;
+    <span class="keyword">default</span>:<span class="built_in">document</span>.write(<span class="string">"太遗憾了，你的成绩不合格呢"</span>);
+}
+</code></pre><p>}</p>
+<p>swith(81);//你的成绩是B呢，很棒呢</p>
+<p>function ifelseif(){</p>
+<pre><code><span class="keyword">var</span> i=<span class="built_in">arguments</span>[<span class="number">0</span>];
+<span class="keyword">if</span>(<span class="built_in">parseInt</span>(i/<span class="number">10</span>)==<span class="number">9</span>){
+    <span class="built_in">document</span>.write(<span class="string">"你的成绩是A呢，很优秀！"</span>);
+}<span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">parseInt</span>(i/<span class="number">10</span>)==<span class="number">8</span>){
+    <span class="built_in">document</span>.write(<span class="string">"你的成绩是B呢，很棒呢"</span>);
+}<span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">parseInt</span>(i/<span class="number">10</span>)==<span class="number">7</span>){
+    <span class="built_in">document</span>.write(<span class="string">"你的成绩是D，刚及格"</span>);
+}<span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">parseInt</span>(i/<span class="number">10</span>)==<span class="number">6</span>){
+    <span class="built_in">document</span>.write(<span class="string">"你的成绩是D，刚及格"</span>);
+}<span class="keyword">else</span>{
+    <span class="built_in">document</span>.write(<span class="string">"太遗憾了，你的成绩不合格呢"</span>);
+}
+</code></pre><p>}<br>ifelseif(67);//你的成绩是D，刚及格</p>
+<h3 id="3、break语句和continue语句">3、break语句和continue语句</h3><p>break语句不属于switch语句，它是一个单独的语句，他跟continue一样，都是用来退出循环语句或者switch语句，break是跳出当前循环，终止循环；而continue是开始一个新的迭代循环</p>
+<p> </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/11/25/我的第一篇文章/" data-id="cihix3yo20001yua2dbat2tne" class="article-share-link">Share</a>
+        <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cihix3yo20001yua2dbat2tne" data-title="cihix3yo20001yua2dbat2tne" data-url="http://yoursite.com/2015/11/25/我的第一篇文章/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+      
+        <a href="http://yoursite.com/2015/11/25/我的第一篇文章/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
 
 
-	</div>
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/24/hello-world/" class="article-date">
+  <time datetime="2015-11-24T12:17:25.000Z" itemprop="datePublished">2015-11-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/24/hello-world/">Hello World</a>
+    </h1>
+  
 
-	<div class="layout-footer" style="clear: both">
-		<div class="panel-footer">
-			<div class="box-footer">
-				<footer class="footer">
-					<p class="cr">&copy; 2015 <a href="https://github.com/foreachsam/"  target="_blank" target="_blank">夜影</a> </p>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
-					<span class="theme">Powered: <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme: <a href="https://github.com/foreachsam/hexo-theme-monogatari" target="_blank">Monogatari</a></span>
-				</footer>
-			</div>
-		</div>
-	</div>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/11/24/hello-world/" data-id="cihix3ynt0000yua2ugk6c4wg" class="article-share-link">Share</a>
+        <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cihix3ynt0000yua2ugk6c4wg" data-title="cihix3ynt0000yua2ugk6c4wg" data-url="http://yoursite.com/2015/11/24/hello-world/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+      
+        <a href="http://yoursite.com/2015/11/24/hello-world/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
 
 
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  
+    <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+	<li>
+		<a href="http://zgmn.github.io/">胡月</a>
+	</li>
+	<li>
+		<a href="http://running11.github.io/">邝艳芝</a>
+	</li>
+	<li>
+		<a href="http://haomark.github.io/">郝云鹏</a>
+	</li>
+	<li>
+		<a href="http://jameblunt1973.github.io/">张记文</a>
+	</li>
+	<li>
+		<a href="http://bairuoqing666.github.io/">白若卿</a>
+	</li>
+	<li>
+		<a href="http://gcsHaya.github.io/">张俊琪</a>
+	</li>
+	<li>
+		<a href="http://sh5054.github.io/">孙浩</a>
+	</li>
+	<li>
+		<a href="http://quanquanxuan.github.io/">宣圆圆</a>
+	</li>
+	<li>
+		<a href="http://tyl1002353363.github.io/">谭于磊</a>
+	</li>
+	<li>
+		<a href="http://crerich.github.io/">程华</a>
+	</li>
+	<li>
+		<a href="http://yamanai.github.io/">张明</a>
+	</li>
+	<li>
+		<a href="http://lck297231489.github.io/">刘臣康</a>
+	</li>
+	<li>
+		<a href="http://tavey.github.io/">王晓伟</a>
+	</li>
+	<li>
+		<a href="http://luqiqi1225.github.io/">陆琦</a>
+	</li>
+	<li>
+		<a href="http://chumengxing1121.github.io/">褚梦星</a>
+	</li>
+	<li>
+		<a href=" http://aoyi551083.github.io/">敖艺</a>
+	</li>
+	<li>
+		<a href="http://http://zoeyzhou.github.io/">周叶</a>
+	</li>
+	<li>
+		<a href=" http://athenachu.github.io/">汪凌峰</a>
+	</li>
+	<li>
+		<a href=" http://sundyfuther.github.io/">陈晓佳</a>
+	</li>
+	<li>
+		<a href="http://wj1213180604.github.io/">王娟</a>
+	</li>
+	<li>
+		<a href="http://weibo0909.github.io/">魏传波</a>
+	</li>
+	<li>
+		<a href="http://tang0916tang.github.io/">张晓翠</a>
+	</li>
+	<li>
+		<a href="http://zhuqy.github.io/">祝倩莹</a>
+	</li>
+	<li>
+		<a href="http://quangege.github.io/">张涌泉</a>
+	</li>
+	<li>
+		<a href="http://niexiaofei1988.github.io/">聂海锋</a>
+	</li>
+	<li>
+		<a href="http://changxiangru.github.io/">常相如</a>
+	</li>
+	<li>
+		<a href="http://xuyanchao.github.io/">许颜超</a>
+	</li>
+	<li>
+		<a href="http://samguoqiang.github.io/">陈国强</a>
+	</li>
+	<li>
+		<a href="http://athenachu.github.io/">汪凌锋</a>
+	</li>
+</ul>
+</div>
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/11/26/html/">html</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/25/我的第一篇文章/">js</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 夜影<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'baibeoainigithub.io';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
 
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
 </body>
 </html>
