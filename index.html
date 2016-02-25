@@ -65,6 +65,157 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-js" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/12/08/js/" class="article-date">
+  <time datetime="2015-12-08T12:05:08.000Z" itemprop="datePublished">2015-12-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/08/js/">js作用域和预解析</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="js作用域和预解析">js作用域和预解析</h2><h3 id="js作用域">js作用域</h3><p>要想了解什么是js的作用域，那么就要知道，这个作用域是对什么而言的。其实，在js中，我觉得所谓作用域就是指变量和函数能在哪些地方访问，哪些地方访问不到，即是全局的还是局部的。</p>
+<p><strong>（1）变量</strong></p>
+<ul>
+<li><p>全局变量<br>  全局变量有两种情况：</p>
+<pre><code><span class="number">1</span>）是指在函数外部定义的变量
+
+<span class="number">2</span>）是指在函数内部，没有用var声明的变量
+</code></pre></li>
+<li><p>局部变量</p>
+<pre><code>在函数内部使用<span class="keyword">var</span>声明的变量
+</code></pre></li>
+</ul>
+<p><strong>（2）函数</strong></p>
+<pre><code>* 匿名函数：使用<span class="function"><span class="keyword">function</span></span>关键字定义，没有函数名的函数
+* 函数表达式：使用关键字声明，后边没有函数名，赋值给一个变量的函数
+* 声明函数：使用<span class="function"><span class="keyword">function</span></span>关键字定义，后边加函数名的函数
+</code></pre><p>举个小例子，方便大家理解，嘿嘿：</p>
+<pre><code>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+    <span class="keyword">var</span> i = <span class="number">10</span>;
+    j= <span class="number">10</span>;
+    <span class="built_in">console</span>.log(<span class="string">'嗨，我是匿名函数'</span>);<span class="comment">//嗨，我是匿名函数</span>
+})();
+
+<span class="function"><span class="keyword">function</span> <span class="title">abc</span>(<span class="params"></span>)</span>{<span class="built_in">console</span>.log(<span class="string">'嗨，我是声明函数'</span>)}
+abc();<span class="comment">//嗨，我是声明函数</span>
+
+<span class="keyword">var</span> j = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+    <span class="built_in">console</span>.log(<span class="string">'嗨，我是函数表达式'</span>);
+    }
+j();<span class="comment">//嗨，我是函数表达式</span>
+</code></pre><p>在第一个小例子中，我定义的i就属于局部变量，只能在这个函数内部被访问，在其他的地方是访问不到它的，它是局部变量；，但是j是全局变量，它可以在任何的地方访问，他的作用域是全局的。</p>
+        
+          <p class="article-more-link">
+            <a href="/2015/12/08/js/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/12/08/js/" data-id="cil22y8zl0002wpa2ej99oowi" class="article-share-link">Share</a>
+        <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cil22y8zl0002wpa2ej99oowi" data-title="cil22y8zl0002wpa2ej99oowi" data-url="http://yoursite.com/2015/12/08/js/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+      
+        <a href="http://yoursite.com/2015/12/08/js/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/12/08/hello-world/" class="article-date">
+  <time datetime="2015-12-08T12:02:07.000Z" itemprop="datePublished">2015-12-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/08/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/12/08/hello-world/" data-id="cil22y8z50000wpa2zpw0988i" class="article-share-link">Share</a>
+        <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cil22y8z50000wpa2zpw0988i" data-title="cil22y8z50000wpa2zpw0988i" data-url="http://yoursite.com/2015/12/08/hello-world/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+      
+        <a href="http://yoursite.com/2015/12/08/hello-world/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-html" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/11/26/html/" class="article-date">
@@ -107,95 +258,18 @@
 <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">460px</span></span></span>;
 <span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">"http://    7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) </span></span>;
 <span class="rule"><span class="attribute">background-repeat</span>:<span class="value"> repeat-x</span></span>;</span>
-</code></pre><p>}<br>这样就会出现下边的效果，仔细看哦,跟上边的不一样呢，这是好多张图片按x轴平铺，就是一直重复出现的意思<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/repeat.png?attname=" alt="效果立马见出来哦"><br>background-position的写法：<br>background-postion:center;后边可以是一个单词，可以是两个值，表示向左向右的距离，也可以写top bottom表示在容器的底部或顶部，大家看哦，在这里我把background所包含属性都敲出来了</p>
-<pre><code><span class="tag">div</span><span class="rules">{
-
-<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">1500px</span></span></span>;
-<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">460px</span></span></span>;
-<span class="rule"><span class="attribute">background-color</span>:<span class="value">green</span></span>;
-<span class="rule"><span class="attribute">background-image</span>:<span class="value"> <span class="function">url</span>(<span class="string">"http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) </span></span>;
-<span class="rule"><span class="attribute">background-repeat</span>:<span class="value"> no-repeat</span></span>;
-<span class="rule"><span class="attribute">background-position</span>:<span class="value"> center</span></span>;</span>
-</code></pre><p>}</p>
-<p><img src="http://7xoooy.com1.z0.glb.clouddn.com/position.png?attname=" alt="position"><br>其实background还有一种复合的写法，可以减去我们很多的麻烦，我一般都会用复合的呢，但是那个没有这个清晰明了，大家跟我来看一看吧</p>
-<pre><code><span class="tag">div</span><span class="rules">{
-
-<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">1500px</span></span></span>;
-<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">460px</span></span></span>;
-<span class="comment">/*background-color:green;
-background-image: url("http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname=") ;
-background-repeat: no-repeat;
-background-position: center;*/</span>
-<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(<span class="string">"http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) no-repeat center</span></span>;</span>
-</code></pre><p>}</p>
-<p>到这里background的所有属性都已经讲完了，如果大家有问题，可以一起讨论呢，夜影随时欢迎你们！</p>
-<h3 id="2、选择器">2、选择器</h3><p>在css中，说到选择器，大家应该也不陌生呢，我想，我应该跟大家一样，喜欢用类选择器和id选择器吧，那么究竟有几种选择器，他们之间又有着怎么样的联系呢<br>选择器：层级选择器、群组选择器、标签选择器、id选择器、通配选择器<br>其中，若在只有一个选择器的话，id选择器的优先级最高，其次是类选择器。下边跟我一起来看一些例子吧，可能会帮助你们更好的了解选择器.<br>那么首先我肯定要先在html中创建这些div，div1就属于类选择器，div2属于id选择器，什么都不写，在css中直接用div的属于标签选择器<br>通配选择器就是在css中以*号开始给所有的选择器设置，群组选择器就是对很多个有相同设定的标签设定的选择器，可以同时作用与多个标签</p>
-<pre><code>&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"div1"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
- &lt;<span class="keyword">div</span> <span class="property">id</span>=<span class="string">"div2"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
- &lt;<span class="keyword">div</span> &gt;&lt;/<span class="keyword">div</span>&gt;
- &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"div3"</span>&gt;
-     &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"div4"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
- &lt;/<span class="keyword">div</span>&gt;
-</code></pre><p>下边第一个使用div就是标签选择器，如果不加路径，那么在这个div下边的所有的div都会继承于这个，div1属于类选择器，div2 属于id选择器，div3 div4就属于父子选择器也就是层级选择器，最后一个是群组选择器，如果是我们自己写代码，尽量避免使用id选择器，因为id的层级比较高，后续维护人员不利于修改，所以我经常使用类选择器，群组选择器和父子选择器的层级就要看具体使用了哪些选择器了，然后将层级相加加好了。。。</p>
-<pre><code><span class="tag">div</span><span class="rules">{
-<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">1500px</span></span></span>;
-<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">460px</span></span></span>;
-<span class="comment">/*background-color:green;
-background-image: url("http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname=") ;
-background-repeat: no-repeat;
-background-position: center;*/</span>
-<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="function">url</span>(<span class="string">"http://7xoooy.com1.z0.glb.clouddn.com/pic.jpg?attname="</span>) no-repeat center</span></span>;
-}</span>
-<span class="class">.div1</span><span class="rules">{
-<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100px</span></span></span>;
-}</span>
-<span class="id">#div2</span><span class="rules">{
-    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span></span></span>;
-}</span>
-<span class="class">.div3</span> <span class="class">.div4</span><span class="rules">{
-    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100px</span></span></span>;
-}</span>
-<span class="class">.div3</span>,<span class="class">.div4</span><span class="rules">{
-    <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">100px</span></span></span>;
-}</span>
-</code></pre><h3 id="3、position的使用">3、position的使用</h3><p>position有三个值，代表了三个类型，一个是fixed，一个是relative，一个是absolute；</p>
-<p><em>relative：是相对定位，对标签没有属性的改变，设置left、right、top、bottom方向可以偏移，有z-index的级别样式，默认后边的元素覆盖前边的元素</em></p>
-<p><em>absolue：对标签属性有改变，float无效，有清除浮动的效果，内容撑开宽度，有z-index 样式和margin，以父级标签的relative为七点或者以body左上角为起点</em></p>
-<p><em>fixed：固定定位，类是于绝对定位，有改变元素属性，方向固定后，是以浏览器窗口定位，不会因为html的滚动而改变位置</em><br>大家一起看个小例子吧：</p>
-<pre><code> &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"box1"</span>&gt;
-     &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"box2"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
-      &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"box3"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
-      &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"box4"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
- &lt;/<span class="keyword">div</span>&gt;
-
- .box1{
-    width:<span class="number">800</span>px;
-    height:<span class="number">1500</span>px;
-    border:<span class="number">1</span>px blue solid;
-    position: relative;
-}
-.box2{
-    width:<span class="number">100</span>px;
-    height:<span class="number">50</span>px;
-    background:green;
-    position: fixed;
-}
-.box3{
-    width:<span class="number">100</span>px;
-    height:<span class="number">50</span>px;
-    background:red;
-    position: absolute;
-    right:<span class="number">0</span>px;
-}
-</code></pre><p>初始状态<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/fixed-aboslute.png?attname=" alt="初始状态"></p>
-<p>当将屏幕沿着滚动条向下拉的时候的状态<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/fixed.png?attname=" alt="当将屏幕向下拉的时候的状态"></p>
-
+</code></pre><p>}<br>这样就会出现下边的效果，仔细看哦,跟上边的不一样呢，这是好多张图片按x轴平铺，就是一直重复出现的意思<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/repeat.png?attname=" alt="效果"><br>
+        
+          <p class="article-more-link">
+            <a href="/2015/11/26/html/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/26/html/" data-id="cihj2vbep00023aa2lecw8jsq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/26/html/" data-id="cil22y8zo0003wpa2ar2m17g2" class="article-share-link">Share</a>
         <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cihj2vbep00023aa2lecw8jsq" data-title="cihj2vbep00023aa2lecw8jsq" data-url="http://yoursite.com/2015/11/26/html/"></div>
+      <div class="ds-thread" data-thread-key="cil22y8zo0003wpa2ar2m17g2" data-title="cil22y8zo0003wpa2ar2m17g2" data-url="http://yoursite.com/2015/11/26/html/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -296,9 +370,9 @@ i++;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/我的第一篇文章/" data-id="cihj2vbei00013aa2m84ocfkm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/25/我的第一篇文章/" data-id="cil22y8ze0001wpa27yp3fd04" class="article-share-link">Share</a>
         <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cihj2vbei00013aa2m84ocfkm" data-title="cihj2vbei00013aa2m84ocfkm" data-url="http://yoursite.com/2015/11/25/我的第一篇文章/"></div>
+      <div class="ds-thread" data-thread-key="cil22y8ze0001wpa27yp3fd04" data-title="cil22y8ze0001wpa27yp3fd04" data-url="http://yoursite.com/2015/11/25/我的第一篇文章/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -315,69 +389,6 @@ i++;
       <!-- 多说公共JS代码 end -->
       
         <a href="http://yoursite.com/2015/11/25/我的第一篇文章/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/24/hello-world/" class="article-date">
-  <time datetime="2015-11-24T12:17:25.000Z" itemprop="datePublished">2015-11-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/24/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/24/hello-world/" data-id="cihj2vbea00003aa20vj4k2b8" class="article-share-link">Share</a>
-        <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cihj2vbea00003aa20vj4k2b8" data-title="cihj2vbea00003aa20vj4k2b8" data-url="http://yoursite.com/2015/11/24/hello-world/"></div>
-      <!-- 多说评论框 end -->
-      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-     <script type="text/javascript">
-      var duoshuoQuery = {short_name:"changxiangru918"};
-      (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-      </script>
-      <!-- 多说公共JS代码 end -->
-      
-        <a href="http://yoursite.com/2015/11/24/hello-world/#disqus_thread" class="article-comment-link">Comments</a>
       
       
     </footer>
@@ -495,7 +506,7 @@ i++;
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -507,15 +518,19 @@ i++;
       <ul>
         
           <li>
+            <a href="/2015/12/08/js/">js作用域和预解析</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/08/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
             <a href="/2015/11/26/html/">html</a>
           </li>
         
           <li>
             <a href="/2015/11/25/我的第一篇文章/">js</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/24/hello-world/">Hello World</a>
           </li>
         
       </ul>
@@ -530,7 +545,7 @@ i++;
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2015 夜影<br>
+      &copy; 2016 夜影<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
