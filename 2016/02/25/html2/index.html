@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015/12 | 千城雪</title>
+  <title>html2 | 千城雪</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在蓝欧的点滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="千城雪">
-<meta property="og:url" content="http://yoursite.com/archives/2015/12/index.html">
+  <meta name="description" content="回首2015，感觉有很多被遗忘的东西，新的一年有一个新的心情，新的感悟，我把我对于em标签和strong标签的一些新的理解分享出来">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html2">
+<meta property="og:url" content="http://yoursite.com/2016/02/25/html2/index.html">
 <meta property="og:site_name" content="千城雪">
-<meta property="og:description" content="在蓝欧的点滴">
+<meta property="og:description" content="回首2015，感觉有很多被遗忘的东西，新的一年有一个新的心情，新的感悟，我把我对于em标签和strong标签的一些新的理解分享出来">
+<meta property="og:image" content="http://img2.imgtn.bdimg.com/it/u=3959482083,2896701621&fm=21&gp=0.jpg">
+<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/strong.png">
+<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/em.png">
+<meta property="og:updated_time" content="2016-02-26T01:11:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="千城雪">
-<meta name="twitter:description" content="在蓝欧的点滴">
+<meta name="twitter:title" content="html2">
+<meta name="twitter:description" content="回首2015，感觉有很多被遗忘的东西，新的一年有一个新的心情，新的感悟，我把我对于em标签和strong标签的一些新的理解分享出来">
   
     <link rel="alternative" href="/atom.xml" title="千城雪" type="application/atom+xml">
   
@@ -63,58 +67,96 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/12/08/js/" class="archive-article-date">
-  <time datetime="2015-12-08T12:05:08.000Z" itemprop="datePublished">12月 8</time>
+        <section id="main"><article id="post-html2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/02/25/html2/" class="article-date">
+  <time datetime="2016-02-25T11:36:52.000Z" itemprop="datePublished">2016-02-25</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/08/js/">js作用域和预解析</a>
+    <h1 class="article-title" itemprop="name">
+      html2
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/12/08/hello-world/" class="archive-article-date">
-  <time datetime="2015-12-08T12:02:07.000Z" itemprop="datePublished">12月 8</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/08/hello-world/">Hello World</a>
-    </h1>
-  
+        <p>回首2015，感觉有很多被遗忘的东西，新的一年有一个新的心情，新的感悟，我把我对于em标签和strong标签的一些新的理解分享出来<br>    <a id="more"></a></p>
+<p><img src="http://img2.imgtn.bdimg.com/it/u=3959482083,2896701621&amp;fm=21&amp;gp=0.jpg" alt="山水"></p>
+<p>有时候我们会对一段数字、一段话加粗、一段字符，特别的强调，但是我们有时候还会发现我们设置的一些，没有效果，那是因为我们没有对字体进行设置，我们要是对一段文字使用em和strong标签，即使我们没有设置字体，也可以实现让文字倾斜，和加粗的效果，下边我们看一个例子：<br>1、在html文件中body部分只有这两个标签没有对字体进行设置</p>
+<pre><code><span class="tag">&lt;<span class="title">em</span>&gt;</span>em标签<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+<span class="tag">&lt;<span class="title">strong</span>&gt;</span>strong标签<span class="tag">&lt;/<span class="title">strong</span>&gt;</span>
+</code></pre><p>2、还是上述例子，在html中对字体进行设置，比如在头部加上如下的代码</p>
+<pre><code><span class="tag">body</span><span class="rules">{
+        <span class="rule"><span class="attribute">font</span>:<span class="value"><span class="number">16px</span> Arial,sans-serif</span></span>;
+    }</span>
+</code></pre><p>上述的两个例子会有两个不同的结果，第一个的结果是<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/strong.png" alt=""></p>
+<p>第二个的结果是<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/em.png" alt=""></p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/02/25/html2/" data-id="cil307zhk0004eua20se5tgkz" class="article-share-link">Share</a>
+        <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cil307zhk0004eua20se5tgkz" data-title="cil307zhk0004eua20se5tgkz" data-url="http://yoursite.com/2016/02/25/html2/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+      
+        <a href="http://yoursite.com/2016/02/25/html2/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/02/25/meta/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          meta
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/08/js/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js作用域和预解析</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
 </section>
         
           <aside id="sidebar">
@@ -282,11 +324,13 @@
 <script>
   var disqus_shortname = 'baibeoainigithub.io';
   
+  var disqus_url = 'http://yoursite.com/2016/02/25/html2/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
