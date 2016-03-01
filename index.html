@@ -65,6 +65,209 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-css上" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/01/css上/" class="article-date">
+  <time datetime="2016-03-01T11:41:03.000Z" itemprop="datePublished">2016-03-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/01/css上/">css上</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本篇博客我打算大略的讲解一下css的大概内容，比如css引入方式，css的一些颜色表达方式<br>
+        
+          <p class="article-more-link">
+            <a href="/2016/03/01/css上/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/01/css上/" data-id="cil9fht9p0006fna2ij8pqu9c" class="article-share-link">Share</a>
+        <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cil9fht9p0006fna2ij8pqu9c" data-title="cil9fht9p0006fna2ij8pqu9c" data-url="http://yoursite.com/2016/03/01/css上/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+      
+        <a href="http://yoursite.com/2016/03/01/css上/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-css" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/02/29/css/" class="article-date">
+  <time datetime="2016-02-29T03:00:04.000Z" itemprop="datePublished">2016-02-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/29/css/">css选择器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="css的选择器">css的选择器</h2><p><strong>1、基本选择器</strong></p>
+<p>id选择器、类选择器、通配选择器、群组选择器、层级选择器都是基本选择器，其中一般id选择器的优先级最高，类选择器次之，群组选择器和层级选择器要看具体使用什么选择器而定</p>
+<p><strong>2、伪类选择器</strong></p>
+<p>这是我要讲的重点，也是我以前比较疑惑的地方，伪类选择器并不改变DOM的内容，只是插入了一些修饰类的元素。伪类选择器我个人觉得它比较重于标签的一个状态，比如hover、link都是在特定的条件下才会出现的样式</p>
+<p><strong>3、伪元素选择器</strong><br>伪元素的效果是通过添加一个实际的元素才能达到的。不用在特定的条件下才会出现效果，它的出现可以让我们实现一个标签三用，还可以使用before和after达到清除浮动的效果</p>
+<p><strong>4、下边让我们看看伪类和伪元素的妙用吧</strong></p>
+<p>1、常见伪类（link、hover、visited、active），也是我们通常所说的锚点伪类，我们对这四个伪类设置的时候一定要注意先后顺序，即爱恨原则，也就是要按照link-visited-hover-active，要不然有些伪类的效果就会看不到。<br>下边是一个实例</p>
+<pre><code>a{
+     display: inline-block<span class="comment">;</span>
+     width:200px<span class="comment">;</span>
+     height:100px<span class="comment">;</span>
+     background:pink<span class="comment">;</span>
+ }
+ a:link{
+    font-size:16px<span class="comment">;</span>
+ }
+ a:visited{
+     font-size:32px<span class="comment">;</span>
+ }
+ a:hover{
+    font-size:20px<span class="comment">;</span>
+ }
+ a:active{
+     font-size:40px<span class="comment">;</span>
+ }
+&lt;/style&gt;
+</code></pre><p>  喜欢的童鞋们可以去github上下载源码查看结果</p>
+<p>  2、下边我要说说css3中新增的一些伪类，就是nth选择器，有</p>
+<ul>
+<li>:first-child 选择某个元素的第一个子元素</li>
+<li>:last-child 选择某个元素的最后一个元素</li>
+<li>:nth-child() 选择某个元素的一个或者多个特定的子元素</li>
+<li>:nth-last-child() 选择某个元素的一个或者多个特定的子元素</li>
+<li>:nth-of-type()选择指定的元素</li>
+<li><p>:empty 选择元素里边没有任何内容的元素</p>
+<p>我们下边对这些元素进行一一的介绍<br>我们首先把li样式设置为下列的样式</p>
+<pre><code><span class="comment">  *{</span>
+ margin:0;
+ padding:0;
+ }
+ ul{
+     width:800px;
+     height:50px;
+     border:1px solid gray;
+ }
+ <span class="keyword">li</span>{
+     <span class="keyword">line</span>-height:50px;
+     width:50px;
+     height:50px;
+     text-align: center;
+     border:1px solid gray;
+     border-radius: 50%;
+     <span class="keyword">list</span>-style-<span class="keyword">type</span>:none;
+     float:left;
+     margin-left:30px;
+ }
+
+ <span class="comment">//html结构</span>
+  &lt;ul&gt;
+    &lt;<span class="keyword">li</span>&gt;1&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;2&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;3&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;4&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;5&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;6&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;7&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;8&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;9&lt;/<span class="keyword">li</span>&gt;
+&lt;/ul&gt;
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth1.png" alt=""><br>1）first-child，选择某个元素的第一个子元素，比如我们想要下边的数字1背景色变为浅蓝色</p>
+<pre><code><span class="tag">li</span><span class="pseudo">:first-child</span><span class="rules">{
+    <span class="rule"><span class="attribute">background</span>:<span class="value">lightblue</span></span>;
+}</span>
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth2.png" alt=""><br>2）last-child，选择某个元素的最后一个子元素，比如将最后一个li设置为粉红色</p>
+<pre><code><span class="tag">li</span><span class="pseudo">:last-child</span><span class="rules">{
+     <span class="rule"><span class="attribute">background</span>:<span class="value">pink</span></span>;
+ }</span>    
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth3.png" alt=""><br>3）nth-child，选择某个元素的某一个子元素，比如将第三个li设置为red</p>
+<pre><code><span class="tag">li</span><span class="pseudo">:nth-child(3)</span><span class="rules">{
+    <span class="rule"><span class="attribute">background</span>:<span class="value">red</span></span>;
+}</span>
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth4.png" alt=""><br>4）nth-last-child，从最后一个元素开始算，作用跟nth-child相似，比如我们将倒数第三个设置为蓝色</p>
+<pre><code><span class="tag">li</span><span class="pseudo">:nth-last-child(3)</span><span class="rules">{
+    <span class="rule"><span class="attribute">background</span>:<span class="value">blue</span></span>;
+}</span>
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth5.png" alt=""><br>5）nth-of-type，作用跟nth-child差不多，比如我们将1，3，5，7，9字体设置为黄色<br>  li:nth-of-type(even){</p>
+<pre><code><span class="attribute">color</span>:yellow;
+</code></pre><p>  }<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth6.png" alt=""><br>喜欢的可以联系我，非诚勿扰</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/02/29/css/" data-id="cil9fht920000fna2qarwhzxl" class="article-share-link">Share</a>
+        <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cil9fht920000fna2qarwhzxl" data-title="cil9fht920000fna2qarwhzxl" data-url="http://yoursite.com/2016/02/29/css/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+      
+        <a href="http://yoursite.com/2016/02/29/css/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-html2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/25/html2/" class="article-date">
@@ -96,9 +299,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/25/html2/" data-id="cil32e4jf0003laa2jzybxe0f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/25/html2/" data-id="cil9fht9l0003fna21ash4jm3" class="article-share-link">Share</a>
         <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil32e4jf0003laa2jzybxe0f" data-title="cil32e4jf0003laa2jzybxe0f" data-url="http://yoursite.com/2016/02/25/html2/"></div>
+      <div class="ds-thread" data-thread-key="cil9fht9l0003fna21ash4jm3" data-title="cil9fht9l0003fna21ash4jm3" data-url="http://yoursite.com/2016/02/25/html2/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -165,9 +368,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/08/js/" data-id="cil32e4jd0002laa2phhv79w3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/08/js/" data-id="cil9fht9k0002fna2b3pcqewh" class="article-share-link">Share</a>
         <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil32e4jd0002laa2phhv79w3" data-title="cil32e4jd0002laa2phhv79w3" data-url="http://yoursite.com/2015/12/08/js/"></div>
+      <div class="ds-thread" data-thread-key="cil9fht9k0002fna2b3pcqewh" data-title="cil9fht9k0002fna2b3pcqewh" data-url="http://yoursite.com/2015/12/08/js/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -227,9 +430,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/08/hello-world/" data-id="cil32e4iw0000laa2xhyec3sx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/08/hello-world/" data-id="cil9fht9o0005fna2fpnh7jyh" class="article-share-link">Share</a>
         <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil32e4iw0000laa2xhyec3sx" data-title="cil32e4iw0000laa2xhyec3sx" data-url="http://yoursite.com/2015/12/08/hello-world/"></div>
+      <div class="ds-thread" data-thread-key="cil9fht9o0005fna2fpnh7jyh" data-title="cil9fht9o0005fna2fpnh7jyh" data-url="http://yoursite.com/2015/12/08/hello-world/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -292,9 +495,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/26/html/" data-id="cil32e4jg0004laa2iyinbyy5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/26/html/" data-id="cil9fht9m0004fna21lge8vm4" class="article-share-link">Share</a>
         <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil32e4jg0004laa2iyinbyy5" data-title="cil32e4jg0004laa2iyinbyy5" data-url="http://yoursite.com/2015/11/26/html/"></div>
+      <div class="ds-thread" data-thread-key="cil9fht9m0004fna21lge8vm4" data-title="cil9fht9m0004fna21lge8vm4" data-url="http://yoursite.com/2015/11/26/html/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -351,9 +554,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/我的第一篇文章/" data-id="cil32e4j50001laa2ziktpr30" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/25/我的第一篇文章/" data-id="cil9fht9i0001fna23m9nbr1f" class="article-share-link">Share</a>
         <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil32e4j50001laa2ziktpr30" data-title="cil32e4j50001laa2ziktpr30" data-url="http://yoursite.com/2015/11/25/我的第一篇文章/"></div>
+      <div class="ds-thread" data-thread-key="cil9fht9i0001fna23m9nbr1f" data-title="cil9fht9i0001fna23m9nbr1f" data-url="http://yoursite.com/2015/11/25/我的第一篇文章/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -487,7 +690,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -499,6 +702,14 @@
       <ul>
         
           <li>
+            <a href="/2016/03/01/css上/">css上</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/29/css/">css选择器</a>
+          </li>
+        
+          <li>
             <a href="/2016/02/25/html2/">em标签和strong标签</a>
           </li>
         
@@ -508,14 +719,6 @@
         
           <li>
             <a href="/2015/12/08/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/26/html/">html</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/25/我的第一篇文章/">js</a>
           </li>
         
       </ul>

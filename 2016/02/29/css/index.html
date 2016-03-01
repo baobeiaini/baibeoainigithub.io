@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>css选择器 | 千城雪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="css的选择器1、基本选择器
+id选择器、类选择器、通配选择器、群组选择器、层级选择器都是基本选择器，其中一般id选择器的优先级最高，类选择器次之，群组选择器和层级选择器要看具体使用什么选择器而定
+2、伪类选择器
+这是我要讲的重点，也是我以前比较疑惑的地方，伪类选择器并不改变DOM的内容，只是插入了一些修饰类的元素。伪类选择器我个人觉得它比较重于标签的一个状态，比如hover、link都是在特定的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css选择器">
+<meta property="og:url" content="http://yoursite.com/2016/02/29/css/index.html">
+<meta property="og:site_name" content="千城雪">
+<meta property="og:description" content="css的选择器1、基本选择器
+id选择器、类选择器、通配选择器、群组选择器、层级选择器都是基本选择器，其中一般id选择器的优先级最高，类选择器次之，群组选择器和层级选择器要看具体使用什么选择器而定
+2、伪类选择器
+这是我要讲的重点，也是我以前比较疑惑的地方，伪类选择器并不改变DOM的内容，只是插入了一些修饰类的元素。伪类选择器我个人觉得它比较重于标签的一个状态，比如hover、link都是在特定的">
+<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/nth1.png">
+<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/nth2.png">
+<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/nth3.png">
+<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/nth4.png">
+<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/nth5.png">
+<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/nth6.png">
+<meta property="og:updated_time" content="2016-03-01T11:48:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css选择器">
+<meta name="twitter:description" content="css的选择器1、基本选择器
+id选择器、类选择器、通配选择器、群组选择器、层级选择器都是基本选择器，其中一般id选择器的优先级最高，类选择器次之，群组选择器和层级选择器要看具体使用什么选择器而定
+2、伪类选择器
+这是我要讲的重点，也是我以前比较疑惑的地方，伪类选择器并不改变DOM的内容，只是插入了一些修饰类的元素。伪类选择器我个人觉得它比较重于标签的一个状态，比如hover、link都是在特定的">
+  
+    <link rel="alternative" href="/atom.xml" title="千城雪" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">千城雪</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">厚积才能薄发</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-css" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/02/29/css/" class="article-date">
+  <time datetime="2016-02-29T03:00:04.000Z" itemprop="datePublished">2016-02-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      css选择器
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="css的选择器">css的选择器</h2><p><strong>1、基本选择器</strong></p>
+<p>id选择器、类选择器、通配选择器、群组选择器、层级选择器都是基本选择器，其中一般id选择器的优先级最高，类选择器次之，群组选择器和层级选择器要看具体使用什么选择器而定</p>
+<p><strong>2、伪类选择器</strong></p>
+<p>这是我要讲的重点，也是我以前比较疑惑的地方，伪类选择器并不改变DOM的内容，只是插入了一些修饰类的元素。伪类选择器我个人觉得它比较重于标签的一个状态，比如hover、link都是在特定的条件下才会出现的样式</p>
+<p><strong>3、伪元素选择器</strong><br>伪元素的效果是通过添加一个实际的元素才能达到的。不用在特定的条件下才会出现效果，它的出现可以让我们实现一个标签三用，还可以使用before和after达到清除浮动的效果</p>
+<p><strong>4、下边让我们看看伪类和伪元素的妙用吧</strong></p>
+<p>1、常见伪类（link、hover、visited、active），也是我们通常所说的锚点伪类，我们对这四个伪类设置的时候一定要注意先后顺序，即爱恨原则，也就是要按照link-visited-hover-active，要不然有些伪类的效果就会看不到。<br>下边是一个实例</p>
+<pre><code>a{
+     display: inline-block<span class="comment">;</span>
+     width:200px<span class="comment">;</span>
+     height:100px<span class="comment">;</span>
+     background:pink<span class="comment">;</span>
+ }
+ a:link{
+    font-size:16px<span class="comment">;</span>
+ }
+ a:visited{
+     font-size:32px<span class="comment">;</span>
+ }
+ a:hover{
+    font-size:20px<span class="comment">;</span>
+ }
+ a:active{
+     font-size:40px<span class="comment">;</span>
+ }
+&lt;/style&gt;
+</code></pre><p>  喜欢的童鞋们可以去github上下载源码查看结果</p>
+<p>  2、下边我要说说css3中新增的一些伪类，就是nth选择器，有</p>
+<ul>
+<li>:first-child 选择某个元素的第一个子元素</li>
+<li>:last-child 选择某个元素的最后一个元素</li>
+<li>:nth-child() 选择某个元素的一个或者多个特定的子元素</li>
+<li>:nth-last-child() 选择某个元素的一个或者多个特定的子元素</li>
+<li>:nth-of-type()选择指定的元素</li>
+<li><p>:empty 选择元素里边没有任何内容的元素</p>
+<p>我们下边对这些元素进行一一的介绍<br>我们首先把li样式设置为下列的样式</p>
+<pre><code><span class="comment">  *{</span>
+ margin:0;
+ padding:0;
+ }
+ ul{
+     width:800px;
+     height:50px;
+     border:1px solid gray;
+ }
+ <span class="keyword">li</span>{
+     <span class="keyword">line</span>-height:50px;
+     width:50px;
+     height:50px;
+     text-align: center;
+     border:1px solid gray;
+     border-radius: 50%;
+     <span class="keyword">list</span>-style-<span class="keyword">type</span>:none;
+     float:left;
+     margin-left:30px;
+ }
+
+ <span class="comment">//html结构</span>
+  &lt;ul&gt;
+    &lt;<span class="keyword">li</span>&gt;1&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;2&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;3&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;4&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;5&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;6&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;7&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;8&lt;/<span class="keyword">li</span>&gt;
+    &lt;<span class="keyword">li</span>&gt;9&lt;/<span class="keyword">li</span>&gt;
+&lt;/ul&gt;
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth1.png" alt=""><br>1）first-child，选择某个元素的第一个子元素，比如我们想要下边的数字1背景色变为浅蓝色</p>
+<pre><code><span class="tag">li</span><span class="pseudo">:first-child</span><span class="rules">{
+    <span class="rule"><span class="attribute">background</span>:<span class="value">lightblue</span></span>;
+}</span>
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth2.png" alt=""><br>2）last-child，选择某个元素的最后一个子元素，比如将最后一个li设置为粉红色</p>
+<pre><code><span class="tag">li</span><span class="pseudo">:last-child</span><span class="rules">{
+     <span class="rule"><span class="attribute">background</span>:<span class="value">pink</span></span>;
+ }</span>    
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth3.png" alt=""><br>3）nth-child，选择某个元素的某一个子元素，比如将第三个li设置为red</p>
+<pre><code><span class="tag">li</span><span class="pseudo">:nth-child(3)</span><span class="rules">{
+    <span class="rule"><span class="attribute">background</span>:<span class="value">red</span></span>;
+}</span>
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth4.png" alt=""><br>4）nth-last-child，从最后一个元素开始算，作用跟nth-child相似，比如我们将倒数第三个设置为蓝色</p>
+<pre><code><span class="tag">li</span><span class="pseudo">:nth-last-child(3)</span><span class="rules">{
+    <span class="rule"><span class="attribute">background</span>:<span class="value">blue</span></span>;
+}</span>
+</code></pre><p><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth5.png" alt=""><br>5）nth-of-type，作用跟nth-child差不多，比如我们将1，3，5，7，9字体设置为黄色<br>  li:nth-of-type(even){</p>
+<pre><code><span class="attribute">color</span>:yellow;
+</code></pre><p>  }<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/nth6.png" alt=""><br>喜欢的可以联系我，非诚勿扰</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/02/29/css/" data-id="cil9fht920000fna2qarwhzxl" class="article-share-link">Share</a>
+        <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="cil9fht920000fna2qarwhzxl" data-title="cil9fht920000fna2qarwhzxl" data-url="http://yoursite.com/2016/02/29/css/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+     <script type="text/javascript">
+      var duoshuoQuery = {short_name:"changxiangru918"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- 多说公共JS代码 end -->
+      
+        <a href="http://yoursite.com/2016/02/29/css/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/03/01/css上/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          css上
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/02/25/html2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">em标签和strong标签</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  
+    
+  
+    <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+	<li>
+		<a href="http://zgmn.github.io/">胡月</a>
+	</li>
+	<li>
+		<a href="http://running11.github.io/">邝艳芝</a>
+	</li>
+	<li>
+		<a href="http://haomark.github.io/">郝云鹏</a>
+	</li>
+	<li>
+		<a href="http://jameblunt1973.github.io/">张记文</a>
+	</li>
+	<li>
+		<a href="http://bairuoqing666.github.io/">白若卿</a>
+	</li>
+	<li>
+		<a href="http://gcsHaya.github.io/">张俊琪</a>
+	</li>
+	<li>
+		<a href="http://sh5054.github.io/">孙浩</a>
+	</li>
+	<li>
+		<a href="http://quanquanxuan.github.io/">宣圆圆</a>
+	</li>
+	<li>
+		<a href="http://tyl1002353363.github.io/">谭于磊</a>
+	</li>
+	<li>
+		<a href="http://crerich.github.io/">程华</a>
+	</li>
+	<li>
+		<a href="http://yamanai.github.io/">张明</a>
+	</li>
+	<li>
+		<a href="http://lck297231489.github.io/">刘臣康</a>
+	</li>
+	<li>
+		<a href="http://tavey.github.io/">王晓伟</a>
+	</li>
+	<li>
+		<a href="http://luqiqi1225.github.io/">陆琦</a>
+	</li>
+	<li>
+		<a href="http://chumengxing1121.github.io/">褚梦星</a>
+	</li>
+	<li>
+		<a href=" http://aoyi551083.github.io/">敖艺</a>
+	</li>
+	<li>
+		<a href="http://http://zoeyzhou.github.io/">周叶</a>
+	</li>
+	<li>
+		<a href=" http://athenachu.github.io/">汪凌峰</a>
+	</li>
+	<li>
+		<a href=" http://sundyfuther.github.io/">陈晓佳</a>
+	</li>
+	<li>
+		<a href="http://wj1213180604.github.io/">王娟</a>
+	</li>
+	<li>
+		<a href="http://weibo0909.github.io/">魏传波</a>
+	</li>
+	<li>
+		<a href="http://tang0916tang.github.io/">张晓翠</a>
+	</li>
+	<li>
+		<a href="http://zhuqy.github.io/">祝倩莹</a>
+	</li>
+	<li>
+		<a href="http://quangege.github.io/">张涌泉</a>
+	</li>
+	<li>
+		<a href="http://niexiaofei1988.github.io/">聂海锋</a>
+	</li>
+	<li>
+		<a href="http://changxiangru.github.io/">常相如</a>
+	</li>
+	<li>
+		<a href="http://xuyanchao.github.io/">许颜超</a>
+	</li>
+	<li>
+		<a href="http://samguoqiang.github.io/">陈国强</a>
+	</li>
+	<li>
+		<a href="http://athenachu.github.io/">汪凌锋</a>
+	</li>
+</ul>
+</div>
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/03/01/css上/">css上</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/29/css/">css选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/25/html2/">em标签和strong标签</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/08/js/">js作用域和预解析</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/08/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 夜影<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'baibeoainigithub.io';
+  
+  var disqus_url = 'http://yoursite.com/2016/02/29/css/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

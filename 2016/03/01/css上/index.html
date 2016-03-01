@@ -3,20 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>em标签和strong标签 | 千城雪</title>
+  <title>css上 | 千城雪</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="回首2015，感觉有很多被遗忘的东西，新的一年有一个新的心情，新的感悟，我把我对于em标签和strong标签的一些理解分享出来">
+  <meta name="description" content="本篇博客我打算大略的讲解一下css的大概内容，比如css引入方式，css的一些颜色表达方式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="em标签和strong标签">
-<meta property="og:url" content="http://yoursite.com/2016/02/25/html2/index.html">
+<meta property="og:title" content="css上">
+<meta property="og:url" content="http://yoursite.com/2016/03/01/css上/index.html">
 <meta property="og:site_name" content="千城雪">
-<meta property="og:description" content="回首2015，感觉有很多被遗忘的东西，新的一年有一个新的心情，新的感悟，我把我对于em标签和strong标签的一些理解分享出来">
-<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/strong.png">
-<meta property="og:image" content="http://7xoooy.com1.z0.glb.clouddn.com/em.png">
-<meta property="og:updated_time" content="2016-02-26T02:12:15.000Z">
+<meta property="og:description" content="本篇博客我打算大略的讲解一下css的大概内容，比如css引入方式，css的一些颜色表达方式">
+<meta property="og:updated_time" content="2016-03-01T13:05:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="em标签和strong标签">
-<meta name="twitter:description" content="回首2015，感觉有很多被遗忘的东西，新的一年有一个新的心情，新的感悟，我把我对于em标签和strong标签的一些理解分享出来">
+<meta name="twitter:title" content="css上">
+<meta name="twitter:description" content="本篇博客我打算大略的讲解一下css的大概内容，比如css引入方式，css的一些颜色表达方式">
   
     <link rel="alternative" href="/atom.xml" title="千城雪" type="application/atom+xml">
   
@@ -66,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-html2" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-css上" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/02/25/html2/" class="article-date">
-  <time datetime="2016-02-25T11:36:52.000Z" itemprop="datePublished">2016-02-25</time>
+    <a href="/2016/03/01/css上/" class="article-date">
+  <time datetime="2016-03-01T11:41:03.000Z" itemprop="datePublished">2016-03-01</time>
 </a>
     
   </div>
@@ -80,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      em标签和strong标签
+      css上
     </h1>
   
 
@@ -88,26 +86,48 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>回首2015，感觉有很多被遗忘的东西，新的一年有一个新的心情，新的感悟，我把我对于em标签和strong标签的一些理解分享出来<br><a id="more"></a></p>
-<h1 id="em标签">em标签</h1><p>em标签是用来表示强调，它是通过让文字变为斜体来让文字达到被强调的效果，em和strong标签都是行级标签，所以不能直接设置宽高，只能通过改变标签display的值改变标签的属性，才能对其设置宽高</p>
-<h1 id="strong标签">strong标签</h1><p>strong标签也是用来表示强调的，而且它比em的强调更强烈，strong标签是通过让文本内容变为粗体达到它强调的目的</p>
-<h2 id="strong标签中一个小陷阱">strong标签中一个小陷阱</h2><p><em>有时候我们会对一段数字、一段话加粗、一段字符，特别的强调，但是我们有时候还会发现我们设置的一些，没有效果，那是因为我们没有对字体进行设置，我们要是对一段文字使用em和strong标签，即使我们没有设置字体，也可以实现让文字倾斜，和加粗的效果，下边我们看一个例子：</em></p>
-<p>1、在html文件中body部分只有这两个标签没有对字体进行设置，中文在浏览器中会出现默认的字体设置，在遇到em和strong的时候呢会显示特定的效果，但是英文和数字有时候我们不对字体设置的时候会出现我们设置的加粗效果没有效果，比如</p>
-<pre><code><span class="tag">&lt;<span class="title">em</span>&gt;</span>em标签<span class="tag">&lt;/<span class="title">em</span>&gt;</span>
-<span class="tag">&lt;<span class="title">strong</span>&gt;</span>strong标签<span class="tag">&lt;/<span class="title">strong</span>&gt;</span>
-</code></pre><p>2、还是上述例子，在html中对字体进行设置，比如在头部加上如下的代码</p>
-<pre><code><span class="tag">body</span><span class="rules">{
-        <span class="rule"><span class="attribute">font</span>:<span class="value"><span class="number">16px</span> Arial,sans-serif</span></span>;
-    }</span>
-</code></pre><p>上述的两个例子会有两个不同的结果，第一个的结果是<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/strong.png" alt=""></p>
-<p>第二个的结果是<br><img src="http://7xoooy.com1.z0.glb.clouddn.com/em.png" alt=""></p>
+        <p>本篇博客我打算大略的讲解一下css的大概内容，比如css引入方式，css的一些颜色表达方式<br><a id="more"></a></p>
+<h2 id="一、css引入方式">一、css引入方式</h2><p>在css中，有三种常用的css引入方式，还有一种不太常用的引入方式</p>
+<h3 id="1、内联（行间样式）">1、内联（行间样式）</h3><p>行间样式就是在一行代码的后边加style，对标签的样式进行设置<br>理论不如实践，我们看个小例子吧</p>
+<pre><code>&lt;<span class="keyword">div</span> class = <span class="string">'haha'</span> style = <span class="string">'width:200px;height:100px;background:red'</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+</code></pre><p>效果1：</p>
+<div class="haha" style="width:200px;height:100px;background:red"></div><br>### 2、style内部引用引入方式<br>内部引入方式就是在文档头部引入一段css样式的代码，例如<br><br>         &lt;style type = ‘text/css&gt;<br>             div{<br>                 border:1px solid blue;<br>                 width:100px;<br>                 height:50px;<br>             }<br>         <br>在body部分加入下列代码<br>         <div></div>
+
+<p>效果如下：</p>
+<div class="haha" style="width:100px;height:50px;border:1px solid blue"></div>
+
+<h3 id="3、外部引入">3、外部引入</h3><p>在html中从外部引入一段css样式，可以使用link，link有3个常用的属性，一个是href，表示链接的css的url地址；一个是type，表示的是链接文件的类型；，三就是rel，表示文档与链接文档之间的关系，光说不练假把式，下边我们再来看个小例子：</p>
+<pre><code>&lt;link rel = <span class="symbol">'stylesheet'</span> href = <span class="symbol">'index</span>.css' <span class="keyword">type</span> = <span class="symbol">'text</span>/css'/&gt;
+</code></pre><h3 id="4、三种引入方式的优缺点">4、三种引入方式的优缺点</h3><p><em>1、行间样式：优先级最高，但是不能复用，样式内容不分离</em></p>
+<p><em>2、内部引入：样式内容分离，复用性能不高</em></p>
+<p><em>3、外部引入：样式内容分离，复用性能好，但是在载入文档的时候需要多一次请求</em></p>
+<h2 id="二、css的五种颜色表达方式">二、css的五种颜色表达方式</h2><h3 id="1、英文单词"><strong>1、英文单词</strong></h3><p>比如blue、green、red、white、black等.实例如下，虽然很好记，很好用，但是，数量少，不易我们的颜色多样化</p>
+<pre><code>&lt;<span class="keyword">div</span> style = <span class="string">'width:50px;height:30px;background:red'</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+</code></pre><p>结果</p>
+<div style="width:50px;height:30px;background:red"></div>
+
+<h3 id="2、十六进制"><strong>2、十六进制</strong></h3><p>在css中有很多中颜色表达方式，十六进制在以后工作中很常用，我们大部分都会使用十六进制，因为这样的颜色更为准确</p>
+<pre><code>&lt;<span class="keyword">div</span> style = <span class="string">'width:50px;height:30px;background:#ccc'</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+结果
+</code></pre> <div style="width:50px;height:30px;background:#ccc"></div>
+
+<h3 id="3、三原色rgb函数"><strong>3、三原色rgb函数</strong></h3><p>所有的浏览器都支持rgb颜色值，rgb颜色值是这样定义的：rgb(red,green,blue)，每个颜色的强度，可以说是介于0-255之间的整数，或者是百分比。来个梨子给大家尝尝：</p>
+<pre><code>&lt;<span class="keyword">div</span> style = <span class="string">'width:50px;height:30px;background:rgb(233,23,245)'</span>&gt;&lt;/<span class="keyword">div</span>&gt;    
+</code></pre><p>结果</p>
+<div style="width:50px;height:30px;background:rgb(233,23,245)"></div>
+
+<h3 id="4、rgba函数"><strong>4、rgba函数</strong></h3><p> rgba与rgb的区别就在于多了个a，也就是Alpha透明度，这是个很好的东西啊，我们以后要实现半透明的效果,这个比上一个效果看起来更为舒服，正如上表所展示的，ie8及其以下都对实用的rgba不支持，ie8以下，我们要对用以下进行设置  filter:alpha(opacity=50);    </p>
+<pre><code>&lt;<span class="keyword">div</span> style = <span class="string">'width:50px;height:30px;background:rgba(233,23,245,0.5)'</span>&gt;&lt;/<span class="keyword">div</span>&gt;    
+</code></pre><p>结果</p>
+<div style="width:50px;height:30px;background:rgba(233,23,245,0.5)"></div><br>### <strong>5、hlsa函数</strong><br>H：Hue(色调)。0(或360)表示红色，120表示绿色，240表示蓝色，也可取其他数值来指定颜色。取值为：0 - 360<br>S：Saturation(饱和度)。取值为：0.0% - 100.0%<br>L：Lightness(亮度)。取值为：0.0% - 100.0%<br>A：Alpha透明度。取值0~1之间。<br><br>    <div style="width:50px;height:30px;background:hsla(360,50%,50%,0.5)"></div><br>结果<br><div style="width:50px;height:30px;background:hsla(360,50%,50%,0.5)"></div>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/25/html2/" data-id="cil9fht9l0003fna21ash4jm3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/01/css上/" data-id="cil9fht9p0006fna2ij8pqu9c" class="article-share-link">Share</a>
         <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="cil9fht9l0003fna21ash4jm3" data-title="cil9fht9l0003fna21ash4jm3" data-url="http://yoursite.com/2016/02/25/html2/"></div>
+      <div class="ds-thread" data-thread-key="cil9fht9p0006fna2ij8pqu9c" data-title="cil9fht9p0006fna2ij8pqu9c" data-url="http://yoursite.com/2016/03/01/css上/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
      <script type="text/javascript">
@@ -123,7 +143,7 @@
       </script>
       <!-- 多说公共JS代码 end -->
       
-        <a href="http://yoursite.com/2016/02/25/html2/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://yoursite.com/2016/03/01/css上/#disqus_thread" class="article-comment-link">Comments</a>
       
       
     </footer>
@@ -132,19 +152,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/02/29/css/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          css选择器
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/12/08/js/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/02/29/css/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">js作用域和预解析</div>
+      <div class="article-nav-title">css选择器</div>
     </a>
   
 </nav>
@@ -325,7 +336,7 @@
 <script>
   var disqus_shortname = 'baibeoainigithub.io';
   
-  var disqus_url = 'http://yoursite.com/2016/02/25/html2/';
+  var disqus_url = 'http://yoursite.com/2016/03/01/css上/';
   
   (function(){
     var dsq = document.createElement('script');
